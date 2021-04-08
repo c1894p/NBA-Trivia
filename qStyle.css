@@ -1,0 +1,48 @@
+h1,
+h2 {
+  text-align: center;
+}
+
+p {
+  margin: 0;
+  font-size: 25px;
+}
+
+.choiceContainer {
+  text-align: center;
+}
+
+.choice {
+  font-size: 25px;
+  background-color: aliceblue;
+  border-width: 3px;
+  border-style: solid;
+  padding: 2px 30px;
+  border-radius: 3em;
+}
+
+#nextQ {
+  font-size: 20px;
+  background-color: aliceblue;
+  border-width: 3px;
+  border-style: solid;
+  padding: 2px 30px;
+  border-radius: 3em;
+}
+
+.next {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.restart {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+}
+
+.score {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+}
