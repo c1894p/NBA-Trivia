@@ -12,14 +12,32 @@
 <body>
     <header>
         <h1>NBA Trivia</h1>
-        <h2>A fun way to learn more about the NBA! Click play to get started!</h2>
+        <button id="ruleBtn">Game Info</button>
     </header>
 
-    <div>
+    <div id = "rules">
+        <ul>
+            <h3>Game Info</h3>
+            <li>10 questions total</li>
+            <li>4 choices per questtion</li>
+            <li>When a question is answered correctly you will receive 10 points</li>
+            <li>When a question is answered incorrectly you score will decrease 5 points each time</li>
+            <li>Click Next Question to move forward</li>
+            <li>GOOD LUCK!</li>
+            <button id="closeBtn">Exit</button>
+        </ul>
+    </div>
+
+
+
+    <div class = "play">
+        <h2>A fun way to learn more about the NBA! Click play to get started!</h2>
         <a id="playBtn" href="questions.html">PLAY</a>
     </div>
 
     <video id="videoBG" src="swishBG.mp4" poster="poster.JPG" autoplay="" muted="" loop=""></video>
+
+    <script src="app.js"></script>
 </body>
 
 </html>

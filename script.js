@@ -100,8 +100,9 @@ const choiceB = document.querySelector(".B");
 const choiceC = document.querySelector(".C");
 const choiceD = document.querySelector(".D");
 const choiceBtns = document.querySelectorAll(".choice");
+const choiceContainer = document.querySelector('.choiceContainer')
 const nextQBtn = document.querySelector("#nextQ");
-const score = document.querySelector('span');
+const score = document.querySelector("span");
 
 //event listners
 window.addEventListener("load", setQuestion);
@@ -120,29 +121,38 @@ function setQuestion() {
   choiceD.innerText = questions[q].choices[3];
 
   q++;
-clearAnswer();
 
+  if(q === 10){
+    nextQBtn.style.display = "none";
+  };
+
+  clearAnswer();
+//   results();
 }
 
 //function to check for right asnwer and add/minus from score
 function rightAnswer(e) {
   let btn = e.target;
   let numScore = parseInt(score.innerText);
-    if(btn.innerHTML.toString() === questions[q-1].answer.toString()){
-        btn.style.background = "green";
-        numScore += 10;
-        score.innerText = numScore
-    } else {
-        btn.style.background = "red";
-        numScore -= 5;
-        score.innerText = numScore
-    }
+  if (btn.innerHTML.toString() === questions[q - 1].answer.toString()) {
+    btn.style.background = "green";
+    numScore += 10;
+    score.innerText = numScore;
+  } else {
+    btn.style.background = "red";
+    numScore -= 5;
+    score.innerText = numScore;
+  }
 }
 
 //function to clear choice background colors
-function clearAnswer () {
-    for(let btn of choiceBtns){
-        btn.style.background ="aliceblue";
-    }
+function clearAnswer() {
+  for (let btn of choiceBtns) {
+    btn.style.background = "aliceblue";
+  }
 }
 
+//function to show final results
+// function results (e) {
+  
+// }
