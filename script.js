@@ -107,7 +107,6 @@ const swish = document.querySelector('#swish');
 const buzzer = document.querySelector('#buzzer');
 
 
-
 //event listners
 window.addEventListener("load", setQuestion);
 nextQBtn.addEventListener("click", setQuestion);
