@@ -128,11 +128,18 @@ function setQuestion() {
   choiceD.innerText = questions[q].choices[3];
 
   q++;
+
   setBG();
   clearAnswer();
   results();
 };
 
+
+//function to get choices button audio (Patricio assistance)
+function playSound (el) {
+    let audio = el.cloneNode();
+    audio.play();
+ }
 
 //function to check for right asnwer and add/minus from score
 function rightAnswer(e) {
@@ -143,17 +150,17 @@ function rightAnswer(e) {
       btn.style.background = "rgb(98, 228, 105)";
       numScore += 10;
       score.innerText = numScore;
-      swish.play()
+      playSound(swish);
       btnCLicked = false;
     } else {
         if(btn.style.background === "rgb(252, 63, 63)"){
           numScore = numScore;
           score.innerText = numScore;
       } else {
-        buzzer.play()
         btn.style.background = "rgb(252, 63, 63)";
         numScore -= 5;
         score.innerText = numScore;
+        playSound(buzzer);
       }
     }
   }
