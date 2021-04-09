@@ -49,16 +49,18 @@ li {
 h2 {
   padding-top: 1rem;
   text-align: center;
-  color: rgb(175, 114, 0);
+  color: rgb(192, 136, 32);
   margin: 1rem 0;
   font-family: 'Mukta', sans-serif;
 }
 
 #playBtn {
   font-size: 25px;
+  color: orange;
   background-color: aliceblue;
   border-width: 3px;
   border-style: solid;
+  border-color: orange;
   padding: 2px 30px;
   border-radius: 3em;
   text-decoration: none;
@@ -66,9 +68,11 @@ h2 {
 
 #ruleBtn {
   font-size: 15px;
+  color: orange;
   background-color: aliceblue;
   border-width: 3px;
   border-style: solid;
+  border-color: orange;
   padding: 2px 30px;
   border-radius: 3em;
   text-decoration: none;

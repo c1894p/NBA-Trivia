@@ -135,16 +135,16 @@ function rightAnswer(e) {
   let numScore = parseInt(score.innerText);
   if (btnCLicked === true) {
     if (btn.innerHTML.toString() === questions[q - 1].answer.toString()) {
-      btn.style.background = "green";
+      btn.style.background = "rgb(98, 228, 105)";
       numScore += 10;
       score.innerText = numScore;
       btnCLicked = false;
     } else {
-        if(btn.style.background === "red"){
+        if(btn.style.background === "rgb(252, 63, 63)"){
           numScore = numScore;
           score.innerText = numScore;
       } else {
-        btn.style.background = "red";
+        btn.style.background = "rgb(252, 63, 63)";
         numScore -= 5;
         score.innerText = numScore;
       }

@@ -53,14 +53,15 @@ p {
 
 #restartBtn {
   color:aqua;
+  font-family: 'Mukta', sans-serif;
 }
 
 .score {
   position: fixed;
   top: 1rem;
   right: 1rem;
-  color: orange;
-  font-family: 'Anton', sans-serif;
+  color:aqua;
+  font-family: 'Mukta', sans-serif;
 }
 
 .resultsBtn {
