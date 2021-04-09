@@ -23,8 +23,8 @@ h1 {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 500px;
-  height: 300px;
+  width: 550px;
+  height: 320px;
 }
 
 ul {
@@ -34,7 +34,14 @@ ul {
 
 li {
   list-style-type: none;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
+  font-family: 'Mukta', sans-serif;
+  color: rgb(192, 136, 32);
+}
+
+h3{
+  color: rgb(192, 136, 32);
+  font-style: italic;
 }
 
 #play {
