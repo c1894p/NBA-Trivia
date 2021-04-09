@@ -196,6 +196,7 @@ function finalScore () {
   choiceContainer.style.display = "none";
   const total = document.createElement('h3');
   total.innerText = score.innerText;
+  total.setAttribute('class', 'total')
   h2.appendChild(total);
   resultsBtn.style.display = "none"
 };

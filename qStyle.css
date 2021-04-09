@@ -10,6 +10,7 @@ h2 {
   text-align: center;
   color: orange;
   font-family: 'Mukta', sans-serif;
+  font-size: 30px;
 }
 
 p {
@@ -78,4 +79,8 @@ p {
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
+}
+
+.total {
+  margin-top: 0;
 }
