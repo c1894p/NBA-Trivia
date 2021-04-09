@@ -103,6 +103,10 @@ const choiceBtns = document.querySelectorAll(".choice");
 const choiceContainer = document.querySelector(".choiceContainer");
 const nextQBtn = document.querySelector("#nextQ");
 const score = document.querySelector("span");
+const swish = document.querySelector('#swish');
+const buzzer = document.querySelector('#buzzer');
+
+
 
 //event listners
 window.addEventListener("load", setQuestion);
@@ -129,6 +133,7 @@ function setQuestion() {
   results();
 };
 
+
 //function to check for right asnwer and add/minus from score
 function rightAnswer(e) {
   let btn = e.target;
@@ -138,12 +143,14 @@ function rightAnswer(e) {
       btn.style.background = "rgb(98, 228, 105)";
       numScore += 10;
       score.innerText = numScore;
+      swish.play()
       btnCLicked = false;
     } else {
         if(btn.style.background === "rgb(252, 63, 63)"){
           numScore = numScore;
           score.innerText = numScore;
       } else {
+        buzzer.play()
         btn.style.background = "rgb(252, 63, 63)";
         numScore -= 5;
         score.innerText = numScore;
