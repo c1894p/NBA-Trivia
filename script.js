@@ -100,7 +100,7 @@ const choiceB = document.querySelector(".B");
 const choiceC = document.querySelector(".C");
 const choiceD = document.querySelector(".D");
 const choiceBtns = document.querySelectorAll(".choice");
-const choiceContainer = document.querySelector('.choiceContainer')
+const choiceContainer = document.querySelector(".choiceContainer");
 const nextQBtn = document.querySelector("#nextQ");
 const score = document.querySelector("span");
 
@@ -111,8 +111,11 @@ for (let btn of choiceBtns) {
   btn.addEventListener("click", rightAnswer);
 }
 
-//function to set questions
+//global varables
 let q = 0;
+let btnCLicked = true;
+
+//function to set questions
 function setQuestion() {
   h2.innerText = questions[q].question;
   choiceA.innerText = questions[q].choices[0];
@@ -121,38 +124,72 @@ function setQuestion() {
   choiceD.innerText = questions[q].choices[3];
 
   q++;
-
-  if(q === 10){
-    nextQBtn.style.display = "none";
-  };
-
+  setBG();
   clearAnswer();
-//   results();
-}
+  results();
+};
 
 //function to check for right asnwer and add/minus from score
 function rightAnswer(e) {
   let btn = e.target;
   let numScore = parseInt(score.innerText);
-  if (btn.innerHTML.toString() === questions[q - 1].answer.toString()) {
-    btn.style.background = "green";
-    numScore += 10;
-    score.innerText = numScore;
-  } else {
-    btn.style.background = "red";
-    numScore -= 5;
-    score.innerText = numScore;
+  if (btnCLicked === true) {
+    if (btn.innerHTML.toString() === questions[q - 1].answer.toString()) {
+      btn.style.background = "green";
+      numScore += 10;
+      score.innerText = numScore;
+      btnCLicked = false;
+    } else {
+        if(btn.style.background === "red"){
+          numScore = numScore;
+          score.innerText = numScore;
+      } else {
+        btn.style.background = "red";
+        numScore -= 5;
+        score.innerText = numScore;
+      }
+    }
   }
-}
+};
 
 //function to clear choice background colors
 function clearAnswer() {
   for (let btn of choiceBtns) {
     btn.style.background = "aliceblue";
+    if (btnCLicked === false) {
+      btnCLicked = true;
+    }
   }
 }
 
 //function to show final results
-// function results (e) {
-  
-// }
+const resultsBtn = document.createElement('button');
+const nextDiv = document.querySelector('.next')
+
+function results (e) {
+  if (q === 10) {
+    nextQBtn.style.display = "none";
+    resultsBtn.innerText = 'Final Score'
+    resultsBtn.setAttribute('class', 'resultsBtn');
+    nextDiv.append(resultsBtn);
+  }
+}
+
+//function to create final score 
+function finalScore () {
+  h2.innerHTML = "FINAL SCORE";
+  h2.style.fontSize = "80px";
+  choiceContainer.style.display = "none";
+  const total = document.createElement('h3');
+  total.innerText = score.innerText;
+  h2.appendChild(total);
+  resultsBtn.style.display = "none"
+};
+
+//Event listener to show final score
+resultsBtn.addEventListener('click', finalScore)
+
+function setBG () {
+  document.body.style.backgroundImage = "url('venice.jpg')"
+  document.body.setAttribute('class','questionBG');
+}
