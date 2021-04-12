@@ -1,5 +1,6 @@
 # NBA-Trivia
-# Game Info
+A trivia game on the National Basketball League
+<br>
 There are 10 questions total
 <br>
 Each time a question is answered correctly 10 points will be added to the score keeper 
