@@ -1,17 +1,11 @@
 # NBA-Trivia
-A trivia game on the National Basketball League
-<br>
-There are 10 questions total
-<br>
-Each time a question is answered correctly 10 points will be added to the score keeper 
-<br>
-Each time a question is answered incorrectly 5 points will be deducted from the score keeper
-<br>
-After the last question, click "final score" to show your trivia results
-<br>
-Click "restart game" to play again.
-<br>
-No installations neccessary
+__A trivia game on the National Basketball League__
+- There are 10 questions total
+- Each time a question is answered correctly 10 points will be added to the score keeper 
+- Each time a question is answered incorrectly 5 points will be deducted from the score keeper
+- After the last question, click "final score" to show your trivia results
+- Click "restart game" to play again.
+- No installations neccessary
 
 # Screenshots
 ![Screen Shot 2021-04-12 at 12 26 00 PM](https://user-images.githubusercontent.com/81186889/114428548-55ab1680-9b8a-11eb-8555-1da54f001db6.png)
@@ -23,7 +17,7 @@ No installations neccessary
 This project is written in HTML, CSS, and vanilla Javascript
 
 # Unsolved problems/Major Hurdles
-One major hurdle that I came across was getting the wrong answer audio to play on each incorrect choice. I learned the play() function is a one time play so after the first wrong answer is chosen it would not play again for any followng wrong answers or questions. In order to get full funcionality across all wrong answers and for each question, I used the cloneNode() function on each audio element. I created a stand alone function with a single parameter to pass in the audio element and to create a clone of the audio node each time the function is called. This allowed the audio node to be cloned and called for each wrong answer chosen until the correct answer is picked and again if the user moved on to another queston.
+One major hurdle that I came across was getting the wrong answer audio to play on each incorrect choice. I learned the `play()` function is a one time play so after the first wrong answer is chosen it would not play again for any followng wrong answers or questions. In order to get full funcionality across all wrong answers and for each question, I used the `cloneNode()` function on each audio element. I created a stand alone function with a single parameter to pass in the audio element and to create a clone of the audio node each time the function is called. This allowed the audio node to be cloned and called for each wrong answer chosen until the correct answer is picked and again if the user moved on to another queston.
 
 # User Stories
 MVP Goals
