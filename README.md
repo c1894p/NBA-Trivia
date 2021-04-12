@@ -36,9 +36,11 @@ __Stretch Goals__
 - As a player, I want the game to randomize questions each time the game is reset
 
 # Wireframes
-__Homepage__
+__Home Page__
 ![Screen Shot 2021-04-12 at 12 31 08 PM](https://user-images.githubusercontent.com/81186889/114429143-06b1b100-9b8b-11eb-9c5d-06c03c3bd924.png)
+<br>
 __Questions Page__
 ![Screen Shot 2021-04-12 at 12 31 16 PM](https://user-images.githubusercontent.com/81186889/114429168-0e715580-9b8b-11eb-8a78-cae8c1447299.png)
+<br>
 __Results Page__
 ![Screen Shot 2021-04-12 at 12 31 23 PM](https://user-images.githubusercontent.com/81186889/114429178-103b1900-9b8b-11eb-8e26-4636505e191f.png)
