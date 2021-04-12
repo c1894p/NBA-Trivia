@@ -198,6 +198,8 @@ function finalScore () {
   total.setAttribute('class', 'total')
   h2.appendChild(total);
   resultsBtn.style.display = "none"
+
+  confetti.start();
 };
 
 //Event listener to show final score
