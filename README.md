@@ -11,7 +11,6 @@ __A trivia game on the National Basketball League__
 ![Screen Shot 2021-04-12 at 12 26 00 PM](https://user-images.githubusercontent.com/81186889/114428548-55ab1680-9b8a-11eb-8555-1da54f001db6.png)
 ![Screen Shot 2021-04-12 at 12 26 15 PM](https://user-images.githubusercontent.com/81186889/114428702-81c69780-9b8a-11eb-9c13-cadee9eab978.png)
 ![Screen Shot 2021-04-12 at 12 26 32 PM](https://user-images.githubusercontent.com/81186889/114428711-855a1e80-9b8a-11eb-922d-732c323630bc.png)
-<br>
 
 # Technologies Used
 This project is written in HTML, CSS, and vanilla Javascript
@@ -36,6 +35,7 @@ __Stretch Goals__
 - As a player, I want the game to randomize questions each time the game is reset
 
 # Wireframes
+__Home Page__
 ![Screen Shot 2021-04-12 at 12 31 08 PM](https://user-images.githubusercontent.com/81186889/114429143-06b1b100-9b8b-11eb-9c5d-06c03c3bd924.png)
 ![Screen Shot 2021-04-12 at 12 31 16 PM](https://user-images.githubusercontent.com/81186889/114429168-0e715580-9b8b-11eb-8a78-cae8c1447299.png)
 ![Screen Shot 2021-04-12 at 12 31 23 PM](https://user-images.githubusercontent.com/81186889/114429178-103b1900-9b8b-11eb-8e26-4636505e191f.png)
