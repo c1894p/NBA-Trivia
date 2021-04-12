@@ -6,7 +6,7 @@ const bulls = document.querySelector("#bulls");
 ruleBtn.addEventListener("click", () => {
   ruleDiv.style.display = "block";
   ruleBtn.style.display = "none";
-  // bulls.play();
+  bulls.play();
 });
 
 closeBtn.addEventListener("click", () => {

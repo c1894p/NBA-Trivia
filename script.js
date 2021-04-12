@@ -205,6 +205,7 @@ function finalScore () {
 //Event listener to show final score
 resultsBtn.addEventListener('click', finalScore)
 
+//function to set background for each question
 function setBG () {
   document.body.style.backgroundImage = "url('venice.jpg')"
   document.body.setAttribute('class','questionBG');
