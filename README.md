@@ -1,5 +1,6 @@
 # NBA-Trivia
 __A trivia game on the National Basketball League__
+#### https://c1894p.github.io/NBA-Trivia/
 - There are 10 questions total
 - Each time a question is answered correctly 10 points will be added to the score keeper 
 - Each time a question is answered incorrectly 5 points will be deducted from the score keeper
