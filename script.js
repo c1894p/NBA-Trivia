@@ -102,7 +102,7 @@ const choiceD = document.querySelector(".D");
 const choiceBtns = document.querySelectorAll(".choice");
 const choiceContainer = document.querySelector(".choiceContainer");
 const nextQBtn = document.querySelector("#nextQ");
-const score = document.querySelector("span");
+const score = document.querySelector("#score");
 const swish = document.querySelector('#swish');
 const buzzer = document.querySelector('#buzzer');
 
@@ -115,7 +115,7 @@ for (let btn of choiceBtns) {
 }
 
 //global varables
-let q = 0;
+let q = 0; 
 let btnCLicked = true;
 
 //function to set questions
@@ -132,7 +132,6 @@ function setQuestion() {
   clearAnswer();
   results();
 };
-
 
 //function to get choices button audio (Patricio assistance)
 function playSound (el) {
@@ -179,7 +178,7 @@ function clearAnswer() {
 const resultsBtn = document.createElement('button');
 const nextDiv = document.querySelector('.next')
 
-function results (e) {
+function results () {
   if (q === 10) {
     nextQBtn.style.display = "none";
     resultsBtn.innerText = 'Final Score'
@@ -193,12 +192,11 @@ function finalScore () {
   h2.innerHTML = "FINAL SCORE";
   h2.style.fontSize = "80px";
   choiceContainer.style.display = "none";
-  const total = document.createElement('h3');
+  const total = document.createElement('h3');``
   total.innerText = score.innerText;
   total.setAttribute('class', 'total')
   h2.appendChild(total);
   resultsBtn.style.display = "none"
-
   confetti.start();
 };
 
