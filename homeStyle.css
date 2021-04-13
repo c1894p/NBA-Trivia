@@ -94,3 +94,21 @@ h2 {
   left: 0px;
   z-index: -1;
 }
+
+
+@media (max-width:450px){
+  #rules {
+    margin-top: 2rem;
+    width: 350px;
+    height: 340px;
+  }
+
+  h2 {
+    font-size: 20px;;
+  }
+
+  li {
+    font-size:15px;
+  }
+
+}

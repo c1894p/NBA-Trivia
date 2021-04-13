@@ -10,10 +10,10 @@ const questions = [
     choices: [
       "Boston Celtics",
       "New York Knicks",
-      "Los Angelas Lakers",
+      "Los Angeles Lakers",
       "Chicago Bulls",
     ],
-    answer: "Los Angelas Lakers",
+    answer: "Los Angeles Lakers",
   },
   {
     question: "Who has scored the most points ever in a NBA game?",
@@ -40,7 +40,7 @@ const questions = [
     question: "Which team drafted Kobe Bryant in 1996?",
     choices: [
       "Charlotte Hornets",
-      "Los Angelas Lakers",
+      "Los Angeles Lakers",
       "Chicago Bulls",
       "New York Knicks",
     ],
@@ -51,7 +51,7 @@ const questions = [
     choices: [
       "Detroit Pistons",
       "Boston Celtics",
-      "Los Angelas Lakers",
+      "Los Angeles Lakers",
       "Chicago Bulls",
     ],
     answer: "Boston Celtics",
@@ -87,7 +87,7 @@ const questions = [
     choices: [
       "Chicago Bulls",
       "Golden State Warriors",
-      "Los Angelas Lakers",
+      "Los Angeles Lakers",
       "Miami Heat",
     ],
     answer: "Golden State Warriors",
