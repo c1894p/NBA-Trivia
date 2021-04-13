@@ -1,3 +1,4 @@
+//Questions Array
 const questions = [
   {
     question: "What year was the NBA created?",
@@ -107,7 +108,7 @@ const swish = document.querySelector('#swish');
 const buzzer = document.querySelector('#buzzer');
 
 
-//event listners
+//event listeners
 window.addEventListener("load", setQuestion);
 nextQBtn.addEventListener("click", setQuestion);
 for (let btn of choiceBtns) {
@@ -133,13 +134,13 @@ function setQuestion() {
   results();
 };
 
-//function to get choices button audio (Patricio assistance)
+//function to get choices button audio
 function playSound (el) {
     let audio = el.cloneNode();
     audio.play();
  }
 
-//function to check for right asnwer and add/minus from score
+//function to check for right answer and add/minus from score
 function rightAnswer(e) {
   let btn = e.target;
   let numScore = parseInt(score.innerText);
